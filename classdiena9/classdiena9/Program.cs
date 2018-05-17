@@ -15,11 +15,14 @@ namespace classdiena9
             //klases nosaukums objektanosaukums = new  klasesnosaukums()
             int rezultats = pirmaisobj.saskaitisana(0, 0);
 
-            //otrs objekts
+            //otrs objekts varu izveidot
             pirma pirmaisobj2 = new pirma();
 
               pirmaisobj.skaitlis = 5;
             pirmaisobj2.skaitlis = 9;
+            pirmaisobj2.Set(11);
+            pirmaisobj2.skaitlis = 9;
+
 
             Console.WriteLine("izvade no pirm    " + pirmaisobj.skaitlis);
             Console.WriteLine("izvade no pirm2      " + pirmaisobj2.skaitlis);
@@ -28,6 +31,17 @@ namespace classdiena9
 
             Console.WriteLine("sis naks no manas klases---" + rezultats);
             Console.ReadLine();
+
+            trakaisu simbolibla = new trakaisu();
+            string teikums = simbolibla.kombinesana("visssss", "ir"  ,"kiseliiii");
+            Console.WriteLine(teikums);
+            Console.ReadLine();
+
+
+
+
+
+
         }
         
     }
